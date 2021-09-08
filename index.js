@@ -25,7 +25,6 @@ countRef.on('value', (snapshot) => {
   console.log('The read failed: ' + errorObject.name);
 }); 
 
-document.querySelector('.count').innerHTML = (current_value || 0)
 // Submit form
 function submitForm(e){
   e.preventDefault();
@@ -46,7 +45,7 @@ function submitForm(e){
   // // Hide alert after 3 seconds
   setTimeout(function(){
     document.querySelector('.alert').style.display = 'none';
-  },3000);
+  }, 3000);
 
   // Clear form
   document.getElementById('contactForm').reset();
