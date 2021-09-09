@@ -72,8 +72,16 @@ const messagesRef = db.collection('messages');
 const countRef = db.collection('count');
 countRef.doc("count")
     .onSnapshot((doc) => {
-        document.querySelector('#signers').innerHTML = doc.data()?.count || 0;
-        document.querySelector('#change_org_count').innerHTML = doc.data()?.change_org_count || 0;
+        try {
+            document.querySelector('#signers').innerHTML = doc.data()?.count || 0;
+        } catch (error) {
+           console.log(error)
+        }
+        try {
+            document.querySelector('#change_org_count').innerHTML = (doc.data()?.count + doc.data()?.change_org_count) || 0;
+        } catch (error) {
+           console.log(error)
+        }
     });
 
 // Listen for form submit
