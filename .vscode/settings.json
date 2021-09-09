@@ -1,0 +1,22 @@
+{
+	"html.format.enable": false,
+	"prettier.printWidth": 1200,
+	"editor.wordWrapColumn": 12000,
+	"editor.tabSize": 4,
+	"editor.wordWrap": "off",
+	"prettier.proseWrap": "never",
+	"[yaml]": {
+		"editor.insertSpaces": false,
+		"editor.tabSize": 2,
+		"editor.autoIndent": "advanced"
+	},
+    "[markdown]": {
+        "editor.wordWrap": "off",
+        "editor.tabSize": 4,
+        "editor.quickSuggestions": false
+    },
+    "[javascript]": {
+        "editor.wordWrap": "off",
+        "editor.tabSize": 4,
+    }
+}

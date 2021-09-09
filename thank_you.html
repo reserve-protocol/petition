@@ -22,7 +22,7 @@
 		<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png" />
 		<link rel="manifest" href="assets/img/favicon/manifest.json" />
-		<link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/style.css">
 		<meta name="msapplication-TileColor" content="#ffffff" />
 		<meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png" />
 		<meta name="theme-color" content="#ffffff" />
@@ -32,22 +32,39 @@
 			<div class="container">
 				<div class="row">
 					<div class="col">
-						<h1 class="main-title" style="margin-bottom: 65px;"><span>100.000</span><br />Personas en total han firmado esta petición.</h1>
+						<h1 class="main-title">¡Gracias por firmar! <br> Compartiendo se consiguen muchas más firmas.</h1>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col">
-						<h3 class="alternative">
-							Importante: El petitorio para que Naciones Unidas reconozca que el acceso a una moneda estable es un derecho humano está publicado originalmente en Change.org. Lanzamos este sitio como alternativa ya que en algunos países de Latinoamérica Change.org está restringido y creemos que es importante que todos los que apoyan la causa puedan dejar su firma y expresarse. <br><br> Iremos actualizando el estado de la petición en ambas plataformas.
-						</h3>
-                        <a href="https://www.change.org/StableCurrencyHumanRight" class="btn">
-                            Firmar en Change.org
-                        </a>
-                        <a href="sign.html" class="btn">
-                            Firmar en Link alternativo
-                        </a>
+						<p class="thanks-text">
+                            Muchas personas han firmado esta petición gracias a 
+                            <br>
+                            las personas que la han compartido.
+                            <br>
+                            ¡Únete a ellos y ayuda a que esta petición crezca!
+                        </p>
 					</div>
 				</div>
+                <div class="row">
+                    <div class="col">
+                        <a onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(petitionLink), 'facebook-share-dialog', 'width=626,height=436'); return false;" class="btn">
+                            Comparte en Facebook
+                        </a>
+                        <a id="copylink" class="btn" data-toggle="tooltip" data-placement="top" title="Copiado!">
+                            Copiar Link
+                        </a>
+                        <a onclick="window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(petitionLink), 'twitter-share-dialog', 'width=626,height=436'); return false;" class="btn">
+                            Comparte en Twitter
+                        </a>
+                        <a onclick="shareEmail();" class="btn">
+                            Envía por email
+                        </a>
+                        <a href="http://www.facebook.com/dialog/send?app_id=123456789&amp;link=https://reserve.org/petition/&amp;redirect_uri=https://reserve.org/" class="btn">
+                            Envía un mensaje por Facebook 
+                        </a>
+                    </div>
+                </div>
 			</div>
 		</main>
         <script src="https://www.gstatic.com/firebasejs/9.0.1/firebase-app-compat.js"></script>
@@ -55,6 +72,6 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		<script src="index.js"></script>
+        <script src="index.js"></script>
 	</body>
 </html>

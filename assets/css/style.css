@@ -1,0 +1,275 @@
+body {
+    background: #fafafa;
+    color: #111111;
+    padding-top: 138px;
+    padding-bottom: 138px;
+    font-family: 'Roboto';
+}
+
+main > .container {
+    max-width: 955px;
+}
+
+.main-title {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 91px;
+    letter-spacing: -1px;
+}
+
+.main-title span {
+    font-size: 80px;
+    line-height: 89.6px;
+}
+
+.slogan {
+    margin-bottom: 64px;
+    width: 100%;
+}
+
+.slogan + a {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    line-height: 19.2px;
+    color: #979797;
+    text-decoration: none;
+}
+
+.signs {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.signs span {
+    font-size: 40px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+input,
+select {
+    border-radius: 5px;
+    border: solid 1px #979797;
+    height: 45px;
+    background: transparent;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('../img/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px) center;
+}
+
+select:disabled {
+    color: #979797;
+}
+
+::placeholder {
+    color: #979797;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: solid 1px #979797;
+    margin-bottom: 10px;
+}
+
+.input-group input {
+    border: none;
+    border-bottom: solid 1px #979797;
+    border-radius: 0;
+    margin: 0;
+}
+
+.input-group input:last-child {
+    border-bottom: none;
+}
+
+/* /////////////////////////////// */
+
+.round {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    top: 4px;
+}
+
+.round label {
+    background-color: transparent;
+    border: 1px solid #979797;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 18px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 18px;
+}
+
+.round input + label::after {
+    content: ' ';
+    height: 8px;
+    left: 4px;
+    opacity: 0;
+    position: absolute;
+    top: 4px;
+    width: 8px;
+    background: #111111;
+    border-radius: 100%;
+}
+
+.round input {
+    visibility: hidden;
+}
+
+.round input:checked + label::after {
+    opacity: 1 !important;
+}
+
+.subscribe {
+    margin-top: 70px;
+    display: flex;
+}
+
+.subscribe p {
+    font-size: 13px;
+    Line-height: 19.2px;
+    font-weight: 500;
+}
+
+.column-1 {
+    flex: 0 0 auto;
+    width: 603px;
+}
+
+.column-1 + .col {
+    padding-left: 46px;
+}
+
+.sign-btn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #111111;
+    color: #FAFAFA;
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    line-height: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 21px;
+    outline: none;
+    border: none;
+}
+
+.sign-btn:hover {
+    color: #FAFAFA;
+}
+
+.sign-btn img {
+    margin-top: -2px;
+    margin-right: 17px;
+}
+
+.policies {
+    color: #979797;
+    font-size: 13px;
+    line-height: 19.2px;
+}
+
+.policies a {
+    color: #979797;
+}
+
+@media (max-width: 975px) {
+    .column-1 {
+        width: 100%;
+    }
+
+    .column-1 + .col {
+        padding-left: calc(var(--bs-gutter-x)/ 2);
+    }
+}
+
+.thanks-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25.2px;
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+.btn {
+    border: solid 1px #111111;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #111111;
+    width: 300px;
+    height: 48px;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.btn:hover {
+    color: #111111;
+}
+
+.resend-text {
+    font-size: 20px;
+    line-height: 25.2px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+.resend-text a {
+    color: #111111;
+}
+
+.alternative {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25.2px;
+    text-align: center;
+    max-width: 785px;
+    margin: auto;
+    margin-bottom: 65px;
+}
