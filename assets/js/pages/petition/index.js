@@ -73,6 +73,7 @@ const countRef = db.collection('count');
 countRef.doc("count")
     .onSnapshot((doc) => {
         document.querySelector('#signers').innerHTML = doc.data()?.count || 0;
+        document.querySelector('#signers_total').innerHTML = (doc.data()?.change_org_count + doc.data()?.count) || 0;
     });
 
 // Listen for form submit
