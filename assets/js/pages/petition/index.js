@@ -73,11 +73,13 @@ const countRef = db.collection('count');
 countRef.doc("count")
     .onSnapshot((doc) => {
         try {
+            //Count only alternative method signatures
             document.querySelector('#signers').innerHTML = doc.data()?.count || 0;
         } catch (error) {
            console.log(error)
         }
         try {
+            // Alt method + change.org signatures
             document.querySelector('#change_org_count').innerHTML = (doc.data()?.count + doc.data()?.change_org_count) || 0;
         } catch (error) {
            console.log(error)
