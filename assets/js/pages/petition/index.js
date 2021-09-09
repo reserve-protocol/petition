@@ -14,6 +14,44 @@ $('#copylink').click(function(){
 	}, 500);
 })
 
+$('input').on('input change focusout', function(){
+    let a = $('#name').val();
+    let b = $('#surname').val();
+    let c = $('#email').val();
+    let d = $('#country').val();
+    let e = $('#city').val();
+
+    if(a && b && c){
+        $('.input-group').addClass('strong');
+    } else {
+        $('.input-group').removeClass('strong');
+    }
+
+    if(d) {
+        $('#country').addClass('strong');
+    } else {
+        $('#country').removeClass('strong');
+    }
+
+    if(e) {
+        $('#city').addClass('strong');
+    } else {
+        $('#city').removeClass('strong');
+    }
+
+})
+
+$(window).on('scroll resize', function () {
+    let a = $('#fixed-sign-btn').offset().top;
+    let b = $('#sign-btn').offset().top;
+
+    if(a >= b) {
+        $('#fixed-sign').addClass('hide');
+    } else {
+        $('#fixed-sign').removeClass('hide');
+    }
+});
+
 /* FIREBASE */
 
 const config = {
@@ -80,6 +118,6 @@ function saveMessage(name, surname, email, country, city, shareEmail) {
 	});*/
 
     setTimeout(function () {
-		window.location.href = '/thank_you/';
+		window.location.href = 'thanks/';
 	}, 1500);
 }
