@@ -16,13 +16,6 @@ document.getElementById('contactForm').addEventListener('submit', submitForm);
 
 // Attach an asynchronous callback to read the data at our posts reference
 
-countRef.doc("count")
-  .onSnapshot((doc) => {
-    console.log("Current data: ", doc.data().count);
-    document.querySelector('.count').innerHTML = doc.data()?.count || 0;
-  });
-
-
 // Submit form
 function submitForm(e) {
   e.preventDefault();
