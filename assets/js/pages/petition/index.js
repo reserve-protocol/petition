@@ -52,6 +52,10 @@ $(window).on('scroll resize', function () {
     }
 });
 
+$('#fixed-sign-btn').click(function(){
+    $('#sign-btn').click();
+})
+
 /* FIREBASE */
 
 const config = {
