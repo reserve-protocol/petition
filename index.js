@@ -80,6 +80,6 @@ function saveMessage(name, surname, email, country, city, shareEmail) {
 	});*/
 
     setTimeout(function () {
-		window.location.href = 'thank_you.html';
+		window.location.href = '/thank_you/';
 	}, 1500);
 }
