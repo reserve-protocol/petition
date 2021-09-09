@@ -79,8 +79,8 @@ countRef.doc("count")
            console.log(error)
         }
         try {
-            // Alt method + change.org signatures
-            document.querySelector('#change_org_count').innerHTML = (doc.data()?.count + doc.data()?.change_org_count) || 0;
+            // Alt method + change.org + gopetition signatures
+            document.querySelector('#total_signers').innerHTML = (doc.data()?.count + doc.data()?.change_org_count + doc.data()?.gopetition_count) || 0;
         } catch (error) {
            console.log(error)
         }
