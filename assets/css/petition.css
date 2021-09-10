@@ -344,6 +344,10 @@ small {
     color: #111;
 }
 
+.lang + .dropdown-menu .dropdown-item:active {
+    color: #fff;
+}
+
 .lang + .dropdown-menu a:first-child {
     border: none;
     border-bottom: 1px solid #fff;
