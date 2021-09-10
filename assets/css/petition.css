@@ -340,12 +340,9 @@ small {
     color: white;
 }
 
-.lang + .dropdown-menu .dropdown-item:hover {
+.lang + .dropdown-menu .dropdown-item:hover, .lang + .dropdown-menu .dropdown-item:active {
     color: #111;
-}
-
-.lang + .dropdown-menu .dropdown-item:active {
-    color: #fff;
+    background: #fff;
 }
 
 .lang + .dropdown-menu a:first-child {
