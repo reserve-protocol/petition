@@ -343,7 +343,7 @@ small {
 .lang + .dropdown-menu .dropdown-item:hover, .lang + .dropdown-menu .dropdown-item:active {
     color: #111;
     background: #fff;
-    background-color: #111;
+    background-color: #fff;
 }
 
 .lang + .dropdown-menu a:first-child {
