@@ -20,47 +20,31 @@
                 </svg>
             </a>
             <div class="dropdown-menu" aria-labelledby="lang-selector">
-                <a class="dropdown-item" href="#">English</a>
-                <a class="dropdown-item" href="#">Español</a>
+                <a class="dropdown-item" href="/">English</a>
+                <a class="dropdown-item" href="/es/">Español</a>
             </div>
         </div>
 		<main>
 			<div class="container">
 				<div class="row">
 					<div class="col">
-						<h1 class="main-title last">¡Gracias por firmar! <br> Compartiendo se consiguen muchas más firmas.</h1>
+						<h1 class="main-title" style="margin-bottom: 65px;"><span id="total_signers"></span><br /> Personas en total ya firmaron para pedirle a Naciones Unidas que reconozca que el acceso a una moneda estable es un derecho humano.</h1>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col">
-						<p class="thanks-text">
-                            Muchas personas han firmado esta petición gracias a 
-                            <br>
-                            las personas que la han compartido.
-                            <br>
-                            ¡Únete a ellos y ayuda a que esta petición crezca!
-                        </p>
+						<h3 class="alternative">
+							El petitorio está disponible en Change.org, sin embargo fue necesario generar otra plataforma alternativa ya que en algunas partes de Latinoamérica Change.org está restringido. Creemos que es importante que todos los que apoyan la causa puedan dejar su firma y expresarse sin importar donde estén. <br><br> Iremos actualizando el estado de la petición en ambas plataformas.
+						</h3>
+                        <a href="https://www.change.org/StableCurrencyHumanRight" class="btn" style="background: #e63233; color: #fff; border-color: #e63233;">
+                            Firmar en Change.org
+                        </a>
+                        <a href="sign/" class="btn" style="margin-bottom: 8px; background: #111; color: #fff;">
+                            Firmar en Link alternativo*
+                        </a>
+                        <small>*Usa este link si no puedes acceder a change.org</small>
 					</div>
 				</div>
-                <div class="row">
-                    <div class="col">
-                        <a onclick="window.open('https\:\/\/www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(petitionLink), 'facebook-share-dialog', 'width=626,height=436'); return false;" class="btn">
-                            Comparte en Facebook
-                        </a>
-                        <a id="copylink" class="btn" data-toggle="tooltip" data-placement="top" title="Copiado!">
-                            Copiar Link
-                        </a>
-                        <a onclick="window.open('https\:\/\/twitter.com/intent/tweet?url='+encodeURIComponent(petitionLink), 'twitter-share-dialog', 'width=626,height=436'); return false;" class="btn">
-                            Comparte en Twitter
-                        </a>
-                        <a onclick="shareEmail();" class="btn">
-                            Envía por email
-                        </a>
-                        <a href="fb-messenger:\/\/share/?link=https%3A%2F%2Freserve.org%2petition&app_id=123456789" class="btn">
-                            Envía un mensaje por Facebook 
-                        </a>
-                    </div>
-                </div>
 			</div>
 		</main>
         <script src="https://www.gstatic.com/firebasejs/9.0.1/firebase-app-compat.js"></script>
