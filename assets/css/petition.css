@@ -42,6 +42,7 @@ main > .container {
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 20px;
+    line-height: initial;
 }
 
 .signs span {
@@ -49,6 +50,8 @@ main > .container {
     font-weight: 500;
     display: block;
     margin-bottom: 0;
+    line-height: initial;
+    margin-top: -8px;
 }
 
 h3 {
@@ -168,7 +171,7 @@ input.strong, select.strong {
 }
 
 .subscribe {
-    margin-top: 70px;
+    margin-top: 30px;
     display: flex;
 }
 
@@ -292,6 +295,60 @@ small {
     display: none;
 }
 
+.mobile-signs {
+    display: none;
+}
+
+.lang-selector {
+    position: absolute;
+    top: 15px;
+    right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 130px;
+}
+
+.lang {
+    display: block;
+}
+
+.lang svg {
+    width: 30px;
+    height: 30px;
+}
+
+.lang + .dropdown-menu {
+    left: -100% !important;
+    width: fit-content !important;
+    min-width: fit-content !important;
+    padding: 0 !important;
+    background: #111;
+    border: 1px solid #111;
+    border-radius: 0;
+    position: initial !important;;
+    top: initial !important;;
+    left: initial !important;;
+    transform: initial !important;;
+    margin-top: 10px;
+}
+
+.lang + .dropdown-menu .dropdown-item {
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.lang + .dropdown-menu .dropdown-item:hover {
+    color: #111;
+}
+
+.lang + .dropdown-menu a:first-child {
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+
 @media (max-width: 975px) {
     .column-1 {
         width: 100%;
@@ -400,5 +457,22 @@ small {
 
     #fixed-sign.hide {
         visibility: hidden;
+    }
+
+    .mobile-signs {
+        display: block;
+    }
+
+    .lang-selector {
+        right: 0;
+    }
+
+    .lang svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .lang-selector.sign-page path {
+        fill: white;
     }
 }

@@ -81,6 +81,7 @@ countRef.doc("count")
         try {
             // Alt method + change.org + gopetition signatures
             document.querySelector('#total_signers').innerHTML = (doc.data()?.count + doc.data()?.change_org_count + doc.data()?.gopetition_count) || 0;
+            document.querySelector('#mobile_total_signers').innerHTML = (doc.data()?.count + doc.data()?.change_org_count + doc.data()?.gopetition_count) || 0;
         } catch (error) {
            console.log(error)
         }
