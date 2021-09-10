@@ -1,4 +1,4 @@
-var petitionLink = "https://reserve.org/petition/"
+var petitionLink = "https://stablecurrency.org"
 
 function shareEmail() {
     window.location.href = "mailto:?subject=Ask the United Nations to recognize the access to a stable currency as a human right.&body=" + petitionLink;
