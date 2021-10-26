@@ -13,10 +13,11 @@ body {
 main {
     display: block;
     height: fit-content;
+    width: 100%;
 }
 
 main>.container {
-    max-width: 955px;
+    max-width: 995px;
 }
 
 .main-title {
@@ -297,7 +298,6 @@ select.strong {
     font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
     line-height: 25.2px;
     text-align: center;
-    max-width: 800px;
     margin: auto;
     margin-bottom: 65px;
 }
@@ -379,7 +379,40 @@ small {
     border-bottom: 1px solid #fff;
 }
 
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-wrapper > div {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.logos {
+    flex-direction: row;
+}
+
 @media (max-width: 975px) {
+
+    .btn-wrapper {
+        flex-direction: column;
+    }
+
+    .logos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .logos div {
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .column-1 {
         width: 100%;
     }
